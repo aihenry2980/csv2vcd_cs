@@ -1,0 +1,23 @@
+﻿<Window x:Class="csv2vcd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csv2vcd"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="tb_csvfile" HorizontalAlignment="Left" Height="23" Margin="80,27,0,0" TextWrapping="Wrap" Text="Drag CSV File here" VerticalAlignment="Top" Width="351"/>
+        <Button x:Name="btn_start" Content="Start" HorizontalAlignment="Left" Height="90" Margin="182,97,0,0" VerticalAlignment="Top" Width="136" FontSize="48" FontFamily="Tahoma">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFBFBFB" Offset="1"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDEDDDD" Offset="0.591"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="tb_vcd_result" HorizontalAlignment="Left" Height="23" Margin="80,222,0,0" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="351"/>
+
+    </Grid>
+</Window>
